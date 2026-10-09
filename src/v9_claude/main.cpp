@@ -353,6 +353,7 @@ void setGear(uint8_t target) {
 void setup() {
   Serial.begin(115200);
   delay(1000);
+   Serial.println("version programa v9_claude");
   tft.init();
   tft.setRotation(0);
   drawMacborSplash();
@@ -371,7 +372,7 @@ void setup() {
 
 void loop() {
 
-  Serial.println("version programa v9_claude");
+ 
   bool right = digitalRead(BTN_RIGHT);
   bool left = digitalRead(BTN_LEFT);
   bool gas = digitalRead(BTN_GAS);
