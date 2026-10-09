@@ -370,6 +370,8 @@ void setup() {
 }
 
 void loop() {
+
+  Serial.println("version programa v9_claude");
   bool right = digitalRead(BTN_RIGHT);
   bool left = digitalRead(BTN_LEFT);
   bool gas = digitalRead(BTN_GAS);
